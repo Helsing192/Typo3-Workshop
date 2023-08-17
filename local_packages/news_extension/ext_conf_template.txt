@@ -1,0 +1,2 @@
+# cat=basic; type=int; label=Sets the amount of items per page
+itemsPerPage = 3

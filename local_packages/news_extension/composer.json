@@ -1,0 +1,33 @@
+{
+  "name": "bikar/news-extension",
+  "description": "...",
+  "license": "GPL-2.0-or-later",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "TYPO3 Documentation Team and contributors",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^12.4",
+    "typo3/cms-extbase": "^12.4",
+    "typo3/cms-fluid": "^12.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bikar\\NewsExtension\\": "Classes/"
+    }
+  },
+  "config": {
+    "bin-dir": ".Build/bin",
+    "sort-packages": true,
+    "vendor-dir": ".Build/vendor"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "news_extension",
+      "web-dir": ".Build/web"
+    }
+  }
+}

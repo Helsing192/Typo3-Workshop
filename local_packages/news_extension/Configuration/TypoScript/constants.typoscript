@@ -1,0 +1,21 @@
+plugin.tx_newsextension {
+  view {
+    # cat=plugin.tx_newsextension/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:news_extension/Resources/Private/Templates/
+    # cat=plugin.tx_newsextension/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:news_extension/Resources/Private/Partials/
+    # cat=plugin.tx_newsextension/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:news_extension/Resources/Private/Layouts/
+  }
+}
+
+module.tx_newsextension {
+  view {
+    # cat=module.tx_newsextension/file; type=string; label=Path to template root (BE)
+    templateRootPath = EXT:news_extension/Resources/Private/Templates/Backend/
+    # cat=module.tx_newsextension/file; type=string; label=Path to template partials (BE)
+    partialRootPath = EXT:news_extension/Resources/Private/Partials/
+    # cat=module.tx_newsextension/file; type=string; label=Path to template layouts (BE)
+    layoutRootPath = EXT:news_extension/Resources/Private/Layouts/Backend/
+  }
+}

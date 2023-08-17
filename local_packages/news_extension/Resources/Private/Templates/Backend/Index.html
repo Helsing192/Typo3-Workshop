@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Module" />
+
+<f:section name="Content">
+    <f:if condition="{categories}">
+        <f:then>
+            <p>Here is a list of news categories:</p>
+            <ul>
+                <f:for each="{categories}" as="category">
+                    <li>
+                        <h3>
+                            <f:link.action action="showCategory" controller="Backend" arguments="{category: category}" title="Show news list of this category">
+                                <core:icon identifier="actions-document-edit" />
+                                {category.title} (
+                                <f:count subject="{category.news}" />
+                                )
+                            </f:link.action>
+                        </h3>
+                        <p>
+                            <f:format.nl2br>{category.description}</f:format.nl2br>
+                        </p>
+                    </li>
+                </f:for>
+            </ul>
+        </f:then>
+        <f:else>
+            <h2>
+                There are currently no categories
+            </h2>
+        </f:else>
+    </f:if>
+</f:section>
+</html>

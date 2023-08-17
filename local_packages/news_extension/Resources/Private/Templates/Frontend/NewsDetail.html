@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+        <f:link.action action="news" controller="Frontend" arguments="{category: category}">[back]</f:link.action>
+
+    <h1>{news.title}</h1>
+    <p>
+        <f:format.nl2br>{news.content}</f:format.nl2br>
+    </p>
+</f:section>
+</html>

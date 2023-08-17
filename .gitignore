@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.ddev
+.env
+.vscode
+*.bak
+*.swp
+database*.sql
+/var
+/vendor
+/public/*
+!/public/.htaccess
+!/public/typo3conf
+/public/typo3conf/*
+!/public/typo3conf/AdditionalConfiguration.php
+/config/sites
