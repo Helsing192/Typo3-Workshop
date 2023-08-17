@@ -50,7 +50,7 @@ return [
             'offlineMode' => '0',
         ],
         'news_extension' => [
-            'itemsPerPage' => '2',
+            'testSetting' => '10',
         ],
     ],
     'FE' => [

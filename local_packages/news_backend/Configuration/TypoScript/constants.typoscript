@@ -1,0 +1,5 @@
+module.tx_newsbackend {
+  view {
+    templateRootPath = EXT:news_backend/Resources/Private/Templates/Backend/
+  }
+}

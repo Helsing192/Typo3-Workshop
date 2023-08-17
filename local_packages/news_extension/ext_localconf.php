@@ -16,11 +16,11 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
             'Pi1',
             // Cache-able Controller-Actions
             [
-                FrontendController::class => 'index,news,newsDetail',
+                FrontendController::class => 'list,show',
             ],
             // Non-Cache-able Controller-Actions
             [
-                FrontendController::class => 'index,news,newsDetail',
+                FrontendController::class => 'list,show',
             ]
         );
 })('NewsExtension');

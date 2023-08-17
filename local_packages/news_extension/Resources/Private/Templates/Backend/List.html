@@ -5,7 +5,7 @@
 
 <f:section name="Content">
     <div class="tx-newsextension-singleNews-list">
-    <h2>List of all news</h2>
+    <h2>List of all news (inline fluid count: {news -> f:count()})(fluid count element: <f:count subject="{news}" />)</h2>
         <f:if condition="{news}">
             <f:then>
                     <f:for each="{news}" as="singleNews">
@@ -13,7 +13,12 @@
                             ________________________
                         </div>
                         <div>
-                            <h1>Title: {singleNews.title}</h1>
+                            <h1>
+                                <f:link.action action="show" controller="Backend" arguments="{news: singleNews}">
+                                <core:icon identifier="actions-document-edit" />
+                                Title: {singleNews.title}
+                            </f:link.action>
+                            </h1>
                             <div>
                                 <f:format.nl2br>{singleNews.content}</f:format.nl2br>
                             </div>

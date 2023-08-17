@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Module" />
+
+<f:section name="Content">
+    <div>
+        <f:link.action action="list" controller="Backend">[back]</f:link.action>
+        <h3>
+            Title: {news.title}
+        </h3>
+        <p>
+            <f:format.nl2br>{news.content}</f:format.nl2br>
+        </p>
+    </div>
+</f:section>
+</html>

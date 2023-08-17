@@ -4,7 +4,6 @@ return [
     'ctrl' => [
         'title' => 'News',
         'label' => 'title',
-        'label_alt' => 'category',
         'label_alt_force' => true,
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -26,7 +25,7 @@ return [
         'maxSingleDBListItems' => 500,
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, hidden, category, title, content'],
+        '1' => ['showitem' => 'sys_language_uid, hidden, title, content'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -86,16 +85,6 @@ return [
                         'invertStateDisplay' => true,
                     ],
                 ],
-            ],
-        ],
-        'category' => [
-            'exclude' => true,
-            'label' => 'Category',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_newsextension_domain_model_category',
-                'maxitems' => 1,
             ],
         ],
         'title' => [

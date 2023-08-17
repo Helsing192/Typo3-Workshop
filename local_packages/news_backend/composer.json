@@ -1,18 +1,18 @@
 {
-  "name": "bikar/news-extension",
+  "name": "bikar/news-backend",
   "license": "GPL-2.0-or-later",
-  "type": "typo3-cms-extension",
+  "type": "typo3-cms-backend",
   "require": {
     "typo3/cms-core": "^12.4"
   },
   "autoload": {
     "psr-4": {
-      "Bikar\\NewsExtension\\": "Classes/"
+      "Bikar\\NewsBackend\\": "Classes/"
     }
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "news_extension"
+      "extension-key": "news_backend"
     }
   }
 }

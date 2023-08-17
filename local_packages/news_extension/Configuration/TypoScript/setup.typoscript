@@ -2,7 +2,6 @@
 plugin.tx_newsextension {
 view {
     templateRootPaths.10 = {$plugin.tx_newsextension.view.templateRootPath}
-    partialRootPaths.10 = {$plugin.tx_newsextension.view.partialRootPath}
     layoutRootPaths.10 = {$plugin.tx_newsextension.view.layoutRootPath}
     defaultPid = auto
   }
@@ -13,15 +12,8 @@ module.tx_newsextension {
   view < plugin.tx_newsextension.view
   view {
     templateRootPaths.10 = {$module.tx_newsextension.view.templateRootPath}
-    partialRootPaths.10 = {$module.tx_newsextension.view.partialRootPath}
     layoutRootPaths.10 = {$module.tx_newsextension.view.layoutRootPath}
   }
 }
 
 page.includeCSS.tx_newsextension = EXT:news_extension/Resources/Public/Css/NewsExtension.css
-
-
-# Make newslist available as lib.news_extension_news_list
-
-#lib.news_extension_news_list < tt_content.list.20.newsextension_newslist
-

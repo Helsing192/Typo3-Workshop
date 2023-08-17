@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69f54a944810bdc8e584b395b6c01b53",
+    "content-hash": "fea3c630d3b0d9a56fa0b83bcf7c797f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -61,23 +61,78 @@
             "time": "2022-12-07T17:46:57+00:00"
         },
         {
+            "name": "bikar/news-backend",
+            "version": "dev-simple-variant",
+            "dist": {
+                "type": "path",
+                "url": "./local_packages/news_backend",
+                "reference": "5563144c41649f24c03554b14c97271dfc610d27"
+            },
+            "require": {
+                "typo3/cms-core": "^12.4"
+            },
+            "type": "typo3-cms-backend",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news_backend"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bikar\\NewsBackend\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "bikar/news-base",
+            "version": "dev-simple-variant",
+            "dist": {
+                "type": "path",
+                "url": "./local_packages/news_base",
+                "reference": "8c377c069c340af3b45513ea4c7b8d770cafb5b9"
+            },
+            "require": {
+                "typo3/cms-core": "^12.4"
+            },
+            "type": "typo3-cms-backend",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news_base"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bikar\\NewsBase\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "bikar/news-extension",
-            "version": "dev-main",
+            "version": "dev-simple-variant",
             "dist": {
                 "type": "path",
                 "url": "./local_packages/news_extension",
-                "reference": "7e1f9f144c023cbb9eee7d0d9a57b9c150594113"
+                "reference": "c8c6135d5c562f0716c389c77bb969f22010553b"
             },
             "require": {
-                "typo3/cms-core": "^12.4",
-                "typo3/cms-extbase": "^12.4",
-                "typo3/cms-fluid": "^12.4"
+                "typo3/cms-core": "^12.4"
             },
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
-                    "extension-key": "news_extension",
-                    "web-dir": ".Build/web"
+                    "extension-key": "news_extension"
                 }
             },
             "autoload": {
@@ -88,20 +143,13 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "TYPO3 Documentation Team and contributors",
-                    "role": "Developer"
-                }
-            ],
-            "description": "...",
             "transport-options": {
                 "relative": true
             }
         },
         {
             "name": "bikar/site-package",
-            "version": "dev-main",
+            "version": "dev-simple-variant",
             "dist": {
                 "type": "path",
                 "url": "./local_packages/site_package",
@@ -7232,7 +7280,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "bikar/site-package": 20,
-        "bikar/news-extension": 20
+        "bikar/news-extension": 20,
+        "bikar/news-backend": 20,
+        "bikar/news-base": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

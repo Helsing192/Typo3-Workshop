@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bikar\NewsExtension\Controller;
+namespace Bikar\NewsBackend\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use Bikar\NewsExtension\Domain\Model\News;
-use Bikar\NewsExtension\Domain\Repository\NewsRepository;
+use Bikar\NewsBackend\Domain\Model\News;
+use Bikar\NewsBackend\Domain\Repository\NewsRepository;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;

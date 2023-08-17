@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bikar\NewsExtension\Domain\Model;
+namespace Bikar\NewsBackend\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 

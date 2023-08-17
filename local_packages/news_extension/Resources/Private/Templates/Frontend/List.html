@@ -4,14 +4,13 @@
 <f:layout name="Default" />
 
 <f:section name="content">
-        <f:link.action action="index" controller="Frontend" >[back]</f:link.action>
         <h1>
-            Category '{category.title}' contains  {category.news -> f:count()} news
+            List of {news -> f:count()} news
         </h1>
                 <ol>
                     <f:for each="{news}" as="singleNews">
                         <li>
-                            <f:link.action action="newsDetail" controller="Frontend" arguments="{news: singleNews, category: category}">{singleNews.title}</f:link.action>
+                            <f:link.action action="show" controller="Frontend" arguments="{news: singleNews}">{singleNews.title}</f:link.action>
                         </li>
                     </f:for>
                 </ol>

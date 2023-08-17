@@ -1,0 +1,6 @@
+module.tx_newsbackend {
+  view < plugin.tx_newsbackend.view
+  view {
+    templateRootPaths.10 = {$module.tx_newsbackend.view.templateRootPath}
+  }
+}
